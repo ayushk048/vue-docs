@@ -1,7 +1,7 @@
-<center>
-![image](https://vuejs.org/images/logo.svg)
+
 # Vue JS
-</center>
+
+
 ## What is Vue.js? [pronounced /vjuː/, like view]
 
 Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Easy to learn. It required only basic knowledge of HTML, CSS and JS only. It has easiest learning Curved among other frame-works out there.
