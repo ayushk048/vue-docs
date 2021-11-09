@@ -19,11 +19,35 @@ Vue (pronounced /vjuː/, like view) is a progressive framework for building user
 </style> // only apply on current component otherwise it's global
 
 ```
+
+
+
+<style>
+    table {
+        text-align: center;
+        width: 100%;
+        border: 1px solid;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    th:first-child {
+        text-align: left;
+    }
+
+
+
+    td:first-child {
+        text-align: left;
+    }
+</style>
+
 ## LifeCycle
 Like react JS vue has life cycle methods too.
 
 It represent by 4 phase of component load. Vue has 13 life cycle methods. but most often 8 life cycle methods are used
-
 
 
 
@@ -72,26 +96,3 @@ MISC | activated(), deactivated(), errorCaptured(), renderTracked(), renderTrigg
 
 
 
-
-
-<style>
-    table {
-        text-align: center;
-        width: 100%;
-        border: 1px solid;
-    }
-
-    th {
-        text-align: center;
-    }
-
-    th:first-child {
-        text-align: left;
-    }
-
-
-
-    td:first-child {
-        text-align: left;
-    }
-</style>
