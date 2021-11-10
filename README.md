@@ -71,16 +71,17 @@ MISC | activated(), deactivated(), errorCaptured(), renderTracked(), renderTrigg
 `#` | Directive | Shorthand | Example | Use | Extra
 --- | --- | --- | --- | --- | --- 
 1 | `v-bind:<attribute-name>` | `:<attribute-name>` | <div> `<input type="text" v-bind:value="f_name">  or  <input type="text" :value="f_name">`</div> | Dynamically bind attribute on Component. trim: same as value.trim(). lazy: set data on lose focus | `<input type="text" v-bind:value.trim.lazy="f_name">`
-2 | `v-model` | - | `<input type="text" v-model="f_name">` | Bind data [State] with view. v  |  `<input type="text" v-model.trim="f_name"> or <input type="text" v-model.trim.lazy="f_name">`  
-3 | `v-text`| - | `<div v-text="Text" />`| Dynamically bind text value on component | -
-4 | `v-html`| - | `<div v-html="<h2>Text</h2>" />`| Dynamically bind HTML on component | -
-5 | `v-for`| - |`<template v-for="(item, index )in items" > </template>`| Use to iterate List in Vue. while using v-for we must have to asign v-bind:key same as we asign in React | - 
-6 | `v-show` | - | `<div v-show="shouldShow" ></div` | Conditionally render Component | -
-7 | `v-if` | - | `<div v-if="<condition>"></div>` | Conditionally render Element | -
-8 | `v-elseif` | - | `<div v-elseif="<condition>"></div>` | Nested if  | - 
-9 | `v-else` | -  |`<div v-else></div>`| else part | -
-10 | `v-pre` | - | `<div v-pre>>{{ dynamicValue }}</div>` | This is renders `{{ dynamicValue }}` instead of actual dynamic value | -
-11 | `v-once` | - | `<div v-once> </div>` | This ensures that element renders Once | -
+2 | `v-on:<event-name>` | `@<event-name>` | <div> `<input type="button" v-on:click="buttonClicked">  or  <input type="button" @click="buttonClicked">`</div> | Event handling | `<input type="button" v-on:click="() => buttonClicked(value, $event)">` to pass event object[basic js event object nothing relevent to vue]
+3 | `v-model` | - | `<input type="text" v-model="f_name">` | Bind data [State] with view. v  |  `<input type="text" v-model.trim="f_name"> or <input type="text" v-model.trim.lazy="f_name">`  
+4 | `v-text`| - | `<div v-text="Text" />`| Dynamically bind text value on component | -
+5 | `v-html`| - | `<div v-html="<h2>Text</h2>" />`| Dynamically bind HTML on component | -
+6 | `v-for`| - |`<template v-for="(item, index )in items" > </template>`| Use to iterate List in Vue. while using v-for we must have to asign v-bind:key same as we asign in React | - 
+7 | `v-show` | - | `<div v-show="shouldShow" ></div` | Conditionally render Component | -
+8 | `v-if` | - | `<div v-if="<condition>"></div>` | Conditionally render Element | -
+9 | `v-elseif` | - | `<div v-elseif="<condition>"></div>` | Nested if  | - 
+10 | `v-else` | -  |`<div v-else></div>`| else part | -
+11 | `v-pre` | - | `<div v-pre>>{{ dynamicValue }}</div>` | This is renders `{{ dynamicValue }}` instead of actual dynamic value | -
+12 | `v-once` | - | `<div v-once> </div>` | This ensures that element renders Once | -
  
  </br>
 
